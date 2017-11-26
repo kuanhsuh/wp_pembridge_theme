@@ -101,9 +101,6 @@ while ( have_posts() ) : the_post(); ?>
           <li><?php echo $specs_five; ?></li>
         </ul>
       </div>
-      <?php// if ( $dl_link ) { ?>
-      <!-- <a href="<?php// echo $dl_link; ?>" class="btn-block btn btn-md btn-dark sans-serif">下載商品型錄</a> -->
-      <?php //} ?>
       <hr class="d-block d-sm-none">
     </div>
     <div class="col-sm-8 mt-3 mt-sm-0">

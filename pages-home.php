@@ -81,7 +81,7 @@ get_header(); ?>
   <section class="events mt-5">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-3 mb-3 mb-md-0">
+        <div class="col">
           <div class='wrapper'>
             <!-- image -->
             <img src='<?php echo $home_new_img['url']; ?>' class="img-fluid"/>
@@ -94,7 +94,7 @@ get_header(); ?>
             <!-- end description div -->
           </div><!-- wrapper -->
         </div> <!-- col -->
-        <div class="col mb-3 mb-md-0">
+        <div class="col">
           <div class='wrapper'>
             <!-- image -->
             <img src='<?php echo $home_inspire_img['url']; ?>' class="img-fluid"/>
@@ -107,7 +107,7 @@ get_header(); ?>
             <!-- end description div -->
           </div><!-- wrapper -->
         </div> <!-- col -->
-        <div class="col-3">
+        <div class="col">
           <div class='wrapper'>
             <!-- image -->
             <img src='<?php echo $home_tools_img['url']; ?>' class="img-fluid"/>

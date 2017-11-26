@@ -45,7 +45,10 @@ get_header(); ?>
       <!-- row -->
       <?php endwhile; wp_reset_query();?>
       <div class="mt-4 text-center">
-        <?php wp_pagenavi( array( 'query' => $loop ) ); ?>
+        <?php $count = $loop->post_count;
+          if($count > 3){
+           wp_pagenavi( array( 'query' => $loop ) );
+          } ?>
       </div>
     </div>
     <!-- container -->
