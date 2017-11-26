@@ -1,0 +1,887 @@
+@charset "utf-8";
+/*!
+Theme Name: pembridge
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: pembridge
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+pembridge is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts and pages
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Links
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Menus
+--------------------------------------------------------------*/
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+	display: block;
+}
+
+@media screen and (min-width: 37.5em) {
+	.menu-toggle {
+		display: none;
+	}
+	.main-navigation ul {
+		display: block;
+	}
+}
+
+.site-main .comment-navigation, .site-main
+.posts-navigation, .site-main
+.post-navigation {
+	margin: 0 0 1.5em;
+	overflow: hidden;
+}
+
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
+	float: left;
+	width: 50%;
+}
+
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+	float: right;
+	text-align: right;
+	width: 50%;
+}
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	word-wrap: normal !important;
+	/* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
+	/* Above WP toolbar. */
+}
+
+/* Do not show the outline on the skip link target. */
+#content[tabindex="-1"]:focus {
+	outline: 0;
+}
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+	clear: both;
+}
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+.widget {
+	margin: 0 0 1.5em;
+	/* Make sure select elements fit in widgets. */
+}
+
+.widget select {
+	max-width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+.comment-content a {
+	word-wrap: break-word;
+}
+
+.bypostauthor {
+	display: block;
+}
+
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+.infinite-scroll .posts-navigation,
+.infinite-scroll.neverending .site-footer {
+	/* Theme Footer (when set to scrolling) */
+	display: none;
+}
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+.infinity-end.neverending .site-footer {
+	display: block;
+}
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+/* Make sure logo link wraps around logo image. */
+.custom-logo-link {
+	display: inline-block;
+}
+
+/*--------------------------------------------------------------
+## Captions
+--------------------------------------------------------------*/
+.wp-caption {
+	margin-bottom: 1.5em;
+	max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-caption .wp-caption-text {
+	margin: 0.8075em 0;
+}
+
+.wp-caption-text {
+	text-align: center;
+}
+
+/*--------------------------------------------------------------
+## Galleries
+--------------------------------------------------------------*/
+.gallery {
+	margin-bottom: 1.5em;
+}
+
+.gallery-item {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	width: 100%;
+}
+
+.gallery-columns-2 .gallery-item {
+	max-width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+	max-width: 33.33%;
+}
+
+.gallery-columns-4 .gallery-item {
+	max-width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+	max-width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+	max-width: 16.66%;
+}
+
+.gallery-columns-7 .gallery-item {
+	max-width: 14.28%;
+}
+
+.gallery-columns-8 .gallery-item {
+	max-width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+	max-width: 11.11%;
+}
+
+.gallery-caption {
+	display: block;
+}
+
+/* === OUR OWN CUSTOM STYLES === */
+
+/* line 4, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
+.navtop-lg {
+  padding: 0.5rem 1rem;
+}
+
+/* line 7, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
+nav {
+  border-top: 1px solid #46494C;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 7, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
+  nav {
+    border-top: none;
+  }
+}
+
+/* line 12, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
+nav .sm-navbar-brand {
+  visibility: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 12, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
+  nav .sm-navbar-brand {
+    visibility: visible;
+  }
+}
+
+/* line 18, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
+nav .nav-item {
+  width: 80px;
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 18, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
+  nav .nav-item {
+    width: 100%;
+  }
+}
+
+/* line 27, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
+.nav-bar {
+  padding: 0rem 1rem;
+}
+
+/* line 32, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
+.icon-link {
+  margin-top: 0.5rem;
+}
+
+/* line 36, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
+.ion-social-facebook {
+  padding: 8px 15px;
+  border-radius: 50%;
+  font-size: 1rem;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  background: #3B5998;
+  color: white;
+}
+
+/* Add a hover effect if you want */
+/* line 48, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
+.ion-social-facebook:hover {
+  opacity: 0.7;
+  color: white;
+}
+
+/* line 53, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
+.hover-home:after {
+  content: 'HOME';
+}
+
+/* line 56, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
+.hover-home:hover:after {
+  content: "首頁";
+  -webkit-animation: fadeIn 1s;
+          animation: fadeIn 1s;
+}
+
+/* line 61, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
+.hover-brands:after {
+  content: 'BRANDS';
+}
+
+/* line 64, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
+.hover-brands:hover:after {
+  content: '品牌';
+  -webkit-animation: fadeIn 1s;
+          animation: fadeIn 1s;
+}
+
+/* line 69, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
+.hover-products:after {
+  content: 'PRODUCTS';
+}
+
+/* line 72, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
+.hover-products:hover:after {
+  content: '產品';
+  -webkit-animation: fadeIn 1s;
+          animation: fadeIn 1s;
+}
+
+/* line 77, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
+.hover-designers:after {
+  content: 'DESIGNERS';
+}
+
+/* line 80, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
+.hover-designers:hover:after {
+  content: '設計師';
+  -webkit-animation: fadeIn 1s;
+          animation: fadeIn 1s;
+}
+
+/* line 85, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
+.hover-contact:after {
+  content: 'CONTACT';
+}
+
+/* line 88, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
+.hover-contact:hover:after {
+  content: '聯絡';
+  -webkit-animation: fadeIn 1s;
+          animation: fadeIn 1s;
+}
+
+/* line 92, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
+.hover-news {
+  width: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 92, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
+  .hover-news {
+    width: 100%;
+  }
+}
+
+/* line 99, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
+.hover-news:after {
+  content: 'NEWS';
+}
+
+/* line 102, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
+.hover-news:hover:after {
+  content: '消息';
+  -webkit-animation: fadeIn 1s;
+          animation: fadeIn 1s;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* line 113, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
+h1:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  background-color: #1985A1;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top: 2rem;
+}
+
+/* line 123, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
+body {
+  font-weight: 300;
+}
+
+/* line 126, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
+h1 {
+  border-bottom: 1px solid #46494C;
+}
+
+h5.lead {
+  font-size: 0.8rem;
+}
+
+/* line 129, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
+body {
+  font-family: Helvetica, 'Microsoft JhengHei', sans-serif;
+}
+
+/* line 133, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
+.serif, h1 {
+  font-family: serif;
+}
+
+/* line 138, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
+.icon-md {
+  font-size: 42px;
+}
+
+/* line 143, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
+.btn {
+  border-radius: 0;
+}
+
+/* line 146, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
+.btn-lg {
+  font-size: 1rem;
+}
+
+/* line 151, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
+.imageholder {
+  position: relative;
+  border: 1px solid grey;
+}
+
+/* line 156, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* line 162, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* line 175, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
+.imageholder:hover .overlay {
+  opacity: 1;
+}
+
+/* line 179, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
+.text {
+  color: #46494C;
+  position: absolute;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+/* line 192, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
+.border-bottom {
+  border-bottom: 1px solid #46494C;
+}
+
+/* line 196, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
+a {
+  color: #46494C;
+}
+
+/* line 202, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
+#loadingScreen {
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+/* line 209, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
+.loadingText {
+  text-transform: uppercase;
+  position: absolute;
+}
+
+/* line 214, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
+#loader {
+  position: absolute;
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+  margin: 50px 0 0 0px;
+  border: 8px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 8px solid #3498db;
+  -webkit-animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+/* line 4, /Users/dannysmac/webdesign/pembridge/src/scss/_contact.scss */
+.ct-info .display-4 {
+  font-size: 1.2rem;
+}
+
+/* line 9, /Users/dannysmac/webdesign/pembridge/src/scss/_contact.scss */
+/* .google-maps {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
+} */
+
+/* line 15, /Users/dannysmac/webdesign/pembridge/src/scss/_contact.scss */
+/* .google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+} */
+
+/* line 23, /Users/dannysmac/webdesign/pembridge/src/scss/_contact.scss */
+.ion-ios-location {
+  color: #d62d20;
+}
+
+/* line 27, /Users/dannysmac/webdesign/pembridge/src/scss/_contact.scss */
+.ion-ios-telephone {
+  color: #27ae60;
+}
+
+/* line 4, /Users/dannysmac/webdesign/pembridge/src/scss/_brands.scss */
+.brands figure {
+  cursor: pointer;
+}
+
+figure img {
+  padding: 50px 100px;
+  border: 1px solid grey;
+}
+
+.brand-thumbnail {
+  padding: 50px 100px;
+  border: 1px solid grey;
+}
+/* line 2, /Users/dannysmac/webdesign/pembridge/src/scss/_home.scss */
+.wrapper {
+  float: left;
+  /* important */
+  position: relative;
+}
+
+/* line 6, /Users/dannysmac/webdesign/pembridge/src/scss/_home.scss */
+.description {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  /* styling bellow */
+  background-color: black;
+  color: white;
+  opacity: 0.6;
+  /* transparency */
+  filter: alpha(opacity=60);
+  /* IE transparency */
+}
+
+/* line 17, /Users/dannysmac/webdesign/pembridge/src/scss/_home.scss */
+p.description_content {
+  text-align: center;
+  padding: 10px;
+  margin: 0px;
+  font-size: 1.2rem;
+}
+
+p.description_content a {
+  color: #fff;
+}
+
+/* line 24, /Users/dannysmac/webdesign/pembridge/src/scss/_home.scss */
+.icon-lg {
+  font-size: 4rem;
+}
+
+/* line 2, /Users/dannysmac/webdesign/pembridge/src/scss/_products.scss */
+.products-heading .nav-item {
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width: 768px) {
+  .products-heading .nav-item {
+    font-size: 0.7rem;
+  }
+}
+/* line 6, /Users/dannysmac/webdesign/pembridge/src/scss/_products.scss */
+.products-heading a {
+  color: #46494C;
+}
+
+/* line 11, /Users/dannysmac/webdesign/pembridge/src/scss/_products.scss */
+.dropdown-item {
+  display: inline;
+}
+
+/* line 15, /Users/dannysmac/webdesign/pembridge/src/scss/_products.scss */
+.expand:after {
+  display: block;
+  content: '';
+  border-bottom: solid 3px #019fb6;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  margin-top: 5px;
+  transition: -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+}
+
+/* line 23, /Users/dannysmac/webdesign/pembridge/src/scss/_products.scss */
+.expand:hover:after {
+  -webkit-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+/* line 29, /Users/dannysmac/webdesign/pembridge/src/scss/_products.scss */
+#main-menu ul {
+  /* position: absolute;
+  z-index: 1;
+  width: 100%; */
+}
+
+/* line 34, /Users/dannysmac/webdesign/pembridge/src/scss/_products.scss */
+#main-menu .nav-item {
+  font-size: 0.8rem;
+}
+
+/* line 37, /Users/dannysmac/webdesign/pembridge/src/scss/_products.scss */
+#submenu ul {
+  /* position: absolute;
+  z-index: 1;
+  width: 100%; */
+  top: 40px;
+}
+@media screen and (max-width: 768px) {
+  #submenu ul {
+    top: 70px;
+  }
+}
+/* line 43, /Users/dannysmac/webdesign/pembridge/src/scss/_products.scss */
+#submenu .nav-item {
+  font-size: 0.8rem;
+}
+
+/* line 46, /Users/dannysmac/webdesign/pembridge/src/scss/_products.scss */
+.mt-6 {
+  margin-top: 7rem;
+}
+
+/* line 1, /Users/dannysmac/webdesign/pembridge/src/scss/_product.scss */
+.breadcrumb {
+  background-color: white;
+}
+
+/* line 3, /Users/dannysmac/webdesign/pembridge/src/scss/_product.scss */
+.breadcrumb a {
+  color: #46494C;
+}
+
+/* line 2, /Users/dannysmac/webdesign/pembridge/src/scss/_designers.scss */
+.designers h3 {
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 4, /Users/dannysmac/webdesign/pembridge/src/scss/_designers.scss */
+  .designers h3 {
+    font-size: 1.2rem;
+  }
+}
+
+/* line 6, /Users/dannysmac/webdesign/pembridge/src/scss/_designers.scss */
+.designers a {
+  color: #46494C;
+}
+
+.blockHover {
+  border: 1px solid #2c3e50;
+  transition: all 400ms cubic-bezier(.02,.01,.47,1);
+}
+
+.blockHover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0,0,0,.15);
+}
+
+.carousel-indicators .active {
+ background-color: #f6f8f8;;
+}
+
+.carousel-indicators li {
+  background-color: #e2e8ea;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23aaa' viewBox='0 0 8 8'%3E%3Cpath d='M4 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23aaa' viewBox='0 0 8 8'%3E%3Cpath d='M1.5 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+#map {
+  width: 100%;
+  height: 350px;
+ }
