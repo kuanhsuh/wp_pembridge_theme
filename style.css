@@ -382,7 +382,7 @@ nav .nav-item {
 
 /* line 32, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
 .icon-link {
-  margin-top: 0.5rem;
+  margin-top: 0.2rem;
 }
 
 /* line 36, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
@@ -706,12 +706,12 @@ a {
 }
 
 figure img {
-  padding: 50px 100px;
+  padding: 50px 50px;
   border: 1px solid grey;
 }
 
 .brand-thumbnail {
-  padding: 50px 100px;
+  padding: 50px 50px;
   border: 1px solid grey;
 }
 /* line 2, /Users/dannysmac/webdesign/pembridge/src/scss/_home.scss */

@@ -51,8 +51,8 @@ get_header(); ?>
         </figure>
 
       </div>
-      <div class="col-10 col-md-8 mt-2 mt-md-0 text-center">
-        <span id="tooltiptext1" class="invisible"><?php echo $camus->post_excerpt; ?><a href="<?php echo get_permalink($camus_id); ?>" class="badge badge-light">View More <i class="ion-arrow-right-c"></i></a>
+      <div class="col-10 col-md-8 mt-2 mt-md-0 text-left">
+        <span id="tooltiptext1" class="invisible"><?php echo substr(strip_tags($camus->post_content), 0, 250);?><a href="<?php echo get_permalink($camus_id); ?>" class="badge badge-light">View More <i class="ion-arrow-right-c"></i></a>
         </span>
       </div>
     </div> <!-- row -->
@@ -64,8 +64,8 @@ get_header(); ?>
           <figcaption class="figure-caption text-secondary font-italic text-center">click</figcaption>
         </figure>
       </div>
-      <div class="col-10 col-md-8 mt-2 mt-md-0 text-center">
-        <span id="tooltiptext2" class="invisible"><?php echo $gubi->post_excerpt; ?><a href="<?php echo get_permalink($gubi_id); ?>" class="badge badge-light">View More <i class="ion-arrow-right-c"></i></a>
+      <div class="col-10 col-md-8 mt-2 mt-md-0 text-left">
+        <span id="tooltiptext2" class="invisible"><?php echo substr(strip_tags($gubi->post_content), 0, 250);?><a href="<?php echo get_permalink($gubi_id); ?>" class="badge badge-light">View More <i class="ion-arrow-right-c"></i></a>
         </span>
       </div>
     </div> <!-- row -->
@@ -77,8 +77,8 @@ get_header(); ?>
           <figcaption class="figure-caption text-secondary font-italic text-center">click</figcaption>
         </figure>
       </div>
-      <div class="col-10 col-md-8 mt-2 mt-md-0 text-center">
-        <span id="tooltiptext3" class="invisible"><?php echo $classicon->post_excerpt; ?><a href="<?php echo get_permalink($classicon_id); ?>" class="badge badge-light">View More <i class="ion-arrow-right-c"></i></a>
+      <div class="col-10 col-md-8 mt-2 mt-md-0 text-left">
+        <span id="tooltiptext3" class="invisible"><?php echo substr(strip_tags($classicon->post_content), 0, 250);?><a href="<?php echo get_permalink($classicon_id); ?>" class="badge badge-light">View More <i class="ion-arrow-right-c"></i></a>
         </span>
       </div>
     </div> <!-- row -->
@@ -90,8 +90,8 @@ get_header(); ?>
         </figure>
       <!-- <img src="http://via.placeholder.com/350x150"  class="tooltip-img img-fluid" alt=""> -->
       </div>
-      <div class="col-10 col-md-8 mt-2 mt-md-0 text-center">
-        <span id="tooltiptext4" class="invisible"><?php echo $leolux->post_excerpt; ?><a href="<?php echo get_permalink($leolux_id); ?>" class="badge badge-light">View More <i class="ion-arrow-right-c"></i></a>
+      <div class="col-10 col-md-8 mt-2 mt-md-0 text-left">
+        <span id="tooltiptext4" class="invisible"><?php echo substr(strip_tags($leolux->post_content), 0, 250);?><a href="<?php echo get_permalink($leolux_id); ?>" class="badge badge-light">View More <i class="ion-arrow-right-c"></i></a>
         </span>
       </div>
     </div> <!-- row -->
@@ -103,8 +103,8 @@ get_header(); ?>
         </figure>
       <!-- <img src="http://via.placeholder.com/350x150"  class="tooltip-img img-fluid" alt=""> -->
       </div>
-      <div class="col-10 col-md-8 mt-2 mt-md-0 text-center">
-        <span id="tooltiptext5" class="invisible"><?php echo $polodivani->post_excerpt; ?><a href="<?php echo get_permalink($polodivani_id); ?>" class="badge badge-light">View More <i class="ion-arrow-right-c"></i></a>
+      <div class="col-10 col-md-8 mt-2 mt-md-0 text-left">
+        <span id="tooltiptext5" class="invisible"><?php echo substr(strip_tags($polodivani->post_content), 0, 250);?><a href="<?php echo get_permalink($polodivani_id); ?>" class="badge badge-light">View More <i class="ion-arrow-right-c"></i></a>
         </span>
       </div>
     </div> <!-- row -->
