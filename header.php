@@ -36,11 +36,10 @@
 <!-- NAVBAR
   ==================================================== -->
   <div class="container-fluid navtop-lg d-none d-md-block">
-      <a class="md-navbar-brand" href="#"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/logo.png" class="img-fluid" alt=""></a>
-      <a href="https://www.facebook.com/pembridge0215/" class="icon-link float-right"><i class="ion-social-facebook"></i></a>
+      <a class="md-navbar-brand" href="http://www.pembridge.com.tw/"><img src="http://www.pembridge.com.tw/wp-content/uploads/2018/06/pembridge_logo-e1528033756647.jpg" class="img-fluid" style="height: 40px;" alt=""></a>
   </div>
   <nav class="container-fluid navbar navbar-expand-md navbar-light mb-3">
-    <a class="sm-navbar-brand" href="#"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/logo.png" class="img-fluid" alt=""></a>
+    <a class="sm-navbar-brand" href="http://www.pembridge.com.tw/"><img src="<?php bloginfo('stylesheet_directory'); ?>http://www.pembridge.com.tw/wp-content/uploads/2018/06/pembridge_logo.jpg" class="img-fluid" alt=""></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
