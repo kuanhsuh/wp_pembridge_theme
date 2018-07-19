@@ -340,59 +340,49 @@ p {
 	margin-bottom: 0.75rem;
 }
 
-/* line 4, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
 .navtop-lg {
   padding: 0.5rem 1rem;
 }
 
-/* line 7, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
 nav {
   border-top: 1px solid #46494C;
 }
 
 @media screen and (max-width: 768px) {
-  /* line 7, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
   nav {
     border-top: none;
   }
 }
 
-/* line 12, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
 nav .sm-navbar-brand {
   visibility: hidden;
 }
 
 @media screen and (max-width: 768px) {
-  /* line 12, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
   nav .sm-navbar-brand {
     visibility: visible;
   }
 }
 
-/* line 18, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
 nav .nav-item {
   width: 100px;
   font-size: 0.8rem;
 }
 
 @media screen and (max-width: 768px) {
-  /* line 18, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
   nav .nav-item {
     width: 100%;
   }
 }
 
-/* line 27, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
 .nav-bar {
   padding: 0rem 1rem;
 }
 
-/* line 32, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
 .icon-link {
   margin-top: 0.2rem;
 }
 
-/* line 36, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
 .ion-social-facebook {
   padding: 8px 15px;
   border-radius: 50%;
@@ -404,91 +394,75 @@ nav .nav-item {
   color: white;
 }
 
-/* Add a hover effect if you want */
-/* line 48, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
 .ion-social-facebook:hover {
   opacity: 0.7;
   color: white;
 }
 
-/* line 53, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
 .hover-home:after {
   content: 'HOME';
 }
 
-/* line 56, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
 .hover-home:hover:after {
   content: "首頁";
   -webkit-animation: fadeIn 1s;
           animation: fadeIn 1s;
 }
 
-/* line 61, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
 .hover-brands:after {
   content: 'BRANDS';
 }
 
-/* line 64, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
 .hover-brands:hover:after {
   content: '品牌';
   -webkit-animation: fadeIn 1s;
           animation: fadeIn 1s;
 }
 
-/* line 69, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
 .hover-products:after {
   content: 'PRODUCTS';
 }
 
-/* line 72, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
 .hover-products:hover:after {
   content: '產品';
   -webkit-animation: fadeIn 1s;
           animation: fadeIn 1s;
 }
 
-/* line 77, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
 .hover-designers:after {
   content: 'DESIGNERS';
 }
 
-/* line 80, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
 .hover-designers:hover:after {
   content: '設計師';
   -webkit-animation: fadeIn 1s;
           animation: fadeIn 1s;
 }
 
-/* line 85, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
 .hover-contact:after {
   content: 'CONTACT';
 }
 
-/* line 88, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
 .hover-contact:hover:after {
   content: '聯絡';
   -webkit-animation: fadeIn 1s;
           animation: fadeIn 1s;
 }
 
-/* line 92, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
 .hover-news {
   width: 50px;
 }
 
 @media screen and (max-width: 768px) {
-  /* line 92, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
   .hover-news {
     width: 100%;
   }
 }
 
-/* line 99, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
 .hover-news:after {
   content: 'NEWS';
 }
 
-/* line 102, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
 .hover-news:hover:after {
   content: '消息';
   -webkit-animation: fadeIn 1s;
@@ -513,7 +487,6 @@ nav .nav-item {
   }
 }
 
-/* line 113, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
 h1:after {
   content: '';
   display: inline-block;
@@ -525,12 +498,10 @@ h1:after {
   top: 2rem;
 }
 
-/* line 123, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
 body {
   font-weight: 300;
 }
 
-/* line 126, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
 h1 {
   border-bottom: 1px solid #46494C;
 }
@@ -539,45 +510,37 @@ h5.lead {
   font-size: 0.8rem;
 }
 
-/* line 129, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
 body {
   font-family: Helvetica, 'Microsoft JhengHei', sans-serif;
 }
 
-/* line 133, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
 .serif, h1 {
   font-family: serif;
 }
 
-/* line 138, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
 .icon-md {
   font-size: 42px;
 }
 
-/* line 143, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
 .btn {
   border-radius: 0;
 }
 
-/* line 146, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
 .btn-lg {
   font-size: 1rem;
 }
 
-/* line 151, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
 .imageholder {
   position: relative;
   border: 1px solid grey;
 }
 
-/* line 156, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
 .image {
   display: block;
   width: 100%;
   height: auto;
 }
 
-/* line 162, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
 .overlay {
   position: absolute;
   top: 0;
@@ -591,12 +554,10 @@ body {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-/* line 175, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
 .imageholder:hover .overlay {
   opacity: 1;
 }
 
-/* line 179, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
 .text {
   color: #46494C;
   position: absolute;
@@ -608,17 +569,14 @@ body {
   -ms-transform: translate(-50%, -50%);
 }
 
-/* line 192, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
 .border-bottom {
   border-bottom: 1px solid #46494C;
 }
 
-/* line 196, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
 a {
   color: #46494C;
 }
 
-/* line 202, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
 #loadingScreen {
   height: 100vh;
   -webkit-box-pack: center;
@@ -633,13 +591,11 @@ a {
           animation-duration: 1s;
 }
 
-/* line 209, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
 .loadingText {
   text-transform: uppercase;
   position: absolute;
 }
 
-/* line 214, /Users/dannysmac/webdesign/pembridge/src/scss/main.scss */
 #loader {
   position: absolute;
   z-index: 1;
@@ -675,12 +631,10 @@ a {
   }
 }
 
-/* line 4, /Users/dannysmac/webdesign/pembridge/src/scss/_contact.scss */
 .ct-info .display-4 {
   font-size: 1rem;
 }
 
-/* line 9, /Users/dannysmac/webdesign/pembridge/src/scss/_contact.scss */
 /* .google-maps {
   position: relative;
   padding-bottom: 75%;
@@ -688,7 +642,6 @@ a {
   overflow: hidden;
 } */
 
-/* line 15, /Users/dannysmac/webdesign/pembridge/src/scss/_contact.scss */
 /* .google-maps iframe {
   position: absolute;
   top: 0;
@@ -697,17 +650,14 @@ a {
   height: 100% !important;
 } */
 
-/* line 23, /Users/dannysmac/webdesign/pembridge/src/scss/_contact.scss */
 .ion-ios-location {
   color: #d62d20;
 }
 
-/* line 27, /Users/dannysmac/webdesign/pembridge/src/scss/_contact.scss */
 .ion-ios-telephone {
   color: #27ae60;
 }
 
-/* line 4, /Users/dannysmac/webdesign/pembridge/src/scss/_brands.scss */
 .brands figure {
   cursor: pointer;
 }
@@ -721,14 +671,12 @@ figure img {
   padding: 50px 50px;
   border: 1px solid grey;
 }
-/* line 2, /Users/dannysmac/webdesign/pembridge/src/scss/_home.scss */
 .wrapper {
   float: left;
   /* important */
   position: relative;
 }
 
-/* line 6, /Users/dannysmac/webdesign/pembridge/src/scss/_home.scss */
 .description {
   position: absolute;
   bottom: 0px;
@@ -743,7 +691,6 @@ figure img {
   /* IE transparency */
 }
 
-/* line 17, /Users/dannysmac/webdesign/pembridge/src/scss/_home.scss */
 p.description_content {
   text-align: center;
   padding: 10px;
@@ -755,13 +702,9 @@ p.description_content a {
   color: #fff;
 }
 
-/* line 24, /Users/dannysmac/webdesign/pembridge/src/scss/_home.scss */
-.icon-lg {
   font-size: 4rem;
 }
 
-/* line 2, /Users/dannysmac/webdesign/pembridge/src/scss/_products.scss */
-.products-heading .nav-item {
   font-size: 0.8rem;
 }
 
@@ -770,17 +713,13 @@ p.description_content a {
     font-size: 0.7rem;
   }
 }
-/* line 6, /Users/dannysmac/webdesign/pembridge/src/scss/_products.scss */
-.products-heading a {
   color: #46494C;
 }
 
-/* line 11, /Users/dannysmac/webdesign/pembridge/src/scss/_products.scss */
 .dropdown-item {
   display: inline;
 }
 
-/* line 15, /Users/dannysmac/webdesign/pembridge/src/scss/_products.scss */
 .expand:after {
   display: block;
   content: '';
@@ -793,7 +732,6 @@ p.description_content a {
   transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
 }
 
-/* line 23, /Users/dannysmac/webdesign/pembridge/src/scss/_products.scss */
 .expand:hover:after {
   -webkit-transform-origin: 0% 50%;
           transform-origin: 0% 50%;
@@ -801,19 +739,16 @@ p.description_content a {
           transform: scaleX(1);
 }
 
-/* line 29, /Users/dannysmac/webdesign/pembridge/src/scss/_products.scss */
 #main-menu ul {
   /* position: absolute;
   z-index: 1;
   width: 100%; */
 }
 
-/* line 34, /Users/dannysmac/webdesign/pembridge/src/scss/_products.scss */
 #main-menu .nav-item {
   font-size: 0.8rem;
 }
 
-/* line 37, /Users/dannysmac/webdesign/pembridge/src/scss/_products.scss */
 #submenu ul {
   /* position: absolute;
   z-index: 1;
@@ -825,39 +760,32 @@ p.description_content a {
     top: 70px;
   }
 }
-/* line 43, /Users/dannysmac/webdesign/pembridge/src/scss/_products.scss */
 #submenu .nav-item {
   font-size: 0.8rem;
 }
 
-/* line 46, /Users/dannysmac/webdesign/pembridge/src/scss/_products.scss */
 .mt-6 {
   margin-top: 7rem;
 }
 
-/* line 1, /Users/dannysmac/webdesign/pembridge/src/scss/_product.scss */
 .breadcrumb {
   background-color: white;
 }
 
-/* line 3, /Users/dannysmac/webdesign/pembridge/src/scss/_product.scss */
 .breadcrumb a {
   color: #46494C;
 }
 
-/* line 2, /Users/dannysmac/webdesign/pembridge/src/scss/_designers.scss */
 .designers h3 {
   font-size: 1rem;
 }
 
 @media screen and (max-width: 768px) {
-  /* line 4, /Users/dannysmac/webdesign/pembridge/src/scss/_designers.scss */
   .designers h3 {
     font-size: 1.2rem;
   }
 }
 
-/* line 6, /Users/dannysmac/webdesign/pembridge/src/scss/_designers.scss */
 .designers a {
   color: #46494C;
 }
