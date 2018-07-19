@@ -43,68 +43,43 @@ get_header();?>
   <div class="container">
 
     <div class="row justify-content-center mt-5">
-      <div id="brand1" class="col-md-4 text-center text-md-left">
+      <div class="col-md-4">
         <figure class="figure">
-          <img src="<?php echo $camus_thumbnail_url; ?>" class="figure-img img-fluid" alt="A generic square">
-          <figcaption class="figure-caption text-secondary font-italic text-center">click</figcaption>
+          <a href="<?php echo get_permalink($camus_id); ?>">
+          <img src="<?php echo $camus_thumbnail_url; ?>" class="img-responsive" alt="<?php echo $camus_thumbnail_url; ?>">
+          </a>
         </figure>
+      </div>
+      <div class="col-md-4">
+        <figure class="figure">
+          <a href="<?php echo get_permalink($gubi_id); ?>">
+          <img src="<?php echo $gubi_thumbnail_url; ?>" class="img-responsive" alt="<?php echo $gubi_thumbnail_url; ?>">
+          </a>
+        </figure>
+      </div>
+      <div class="col-md-4">
+        <figure class="figure">
+          <a href="<?php echo get_permalink($classicon_id); ?>">
+          <img src="<?php echo $classicon_thumbnail_url; ?>" class="img-responsive" alt="<?php echo $classicon_thumbnail_url; ?>">
+          </a>
+        </figure>
+      </div>
+      <div class="col-md-4">
+        <figure class="figure">
+          <a href="<?php echo get_permalink($leolux_id); ?>">
+          <img src="<?php echo $leolux_thumbnail_url; ?>" class="img-responsive" alt="<?php echo $leolux_thumbnail_url; ?>">
+          </a>
+        </figure>
+      </div>
+      <div class="col-md-4">
+        <figure class="figure">
+          <a href="<?php echo get_permalink($polodivani_id); ?>">
+          <img src="<?php echo $polodivani_thumbnail_url; ?>" class="img-responsive" alt="<?php echo $polodivani_thumbnail_url; ?>">
+          </a>
+        </figure>
+      </div>
+      <div class="col-md-4">
 
-      </div>
-      <div class="col-10 col-md-8 mt-2 mt-md-0 text-left">
-        <span id="tooltiptext1" class="invisible"><?php echo substr(strip_tags($camus->post_content), 0, 250); ?><a href="<?php echo get_permalink($camus_id); ?>" class="badge badge-light">View More123123 <i class="ion-arrow-right-c"></i></a>
-        </span>
-      </div>
-    </div> <!-- row -->
-
-    <div class="row justify-content-center mt-5">
-      <div id="brand2" class="col-md-4 text-center text-md-left">
-        <figure class="figure">
-          <img src="<?php echo $gubi_thumbnail_url; ?>" class="figure-img img-fluid" alt="A generic square">
-          <figcaption class="figure-caption text-secondary font-italic text-center">click</figcaption>
-        </figure>
-      </div>
-      <div class="col-10 col-md-8 mt-2 mt-md-0 text-left">
-        <span id="tooltiptext2" class="invisible"><?php echo substr(strip_tags($gubi->post_content), 0, 250); ?><a href="<?php echo get_permalink($gubi_id); ?>" class="badge badge-light">View More <i class="ion-arrow-right-c"></i></a>
-        </span>
-      </div>
-    </div> <!-- row -->
-
-    <div class="row justify-content-center mt-5">
-      <div id="brand3" class="col-md-4 text-center text-md-left">
-        <figure class="figure">
-          <img src="<?php echo $classicon_thumbnail_url; ?>" class="figure-img img-fluid" alt="A generic square">
-          <figcaption class="figure-caption text-secondary font-italic text-center">click</figcaption>
-        </figure>
-      </div>
-      <div class="col-10 col-md-8 mt-2 mt-md-0 text-left">
-        <span id="tooltiptext3" class="invisible"><?php echo substr(strip_tags($classicon->post_content), 0, 250); ?><a href="<?php echo get_permalink($classicon_id); ?>" class="badge badge-light">View More <i class="ion-arrow-right-c"></i></a>
-        </span>
-      </div>
-    </div> <!-- row -->
-    <div class="row justify-content-center mt-5">
-      <div id="brand4" class="col-md-4 text-center text-md-left">
-        <figure class="figure">
-          <img src="<?php echo $leolux_thumbnail_url; ?>" class="figure-img img-fluid" alt="A generic square">
-          <figcaption class="figure-caption text-secondary font-italic text-center">click</figcaption>
-        </figure>
-      <!-- <img src="http://via.placeholder.com/350x150"  class="tooltip-img img-fluid" alt=""> -->
-      </div>
-      <div class="col-10 col-md-8 mt-2 mt-md-0 text-left">
-        <span id="tooltiptext4" class="invisible"><?php echo substr(strip_tags($leolux->post_content), 0, 250); ?><a href="<?php echo get_permalink($leolux_id); ?>" class="badge badge-light">View More <i class="ion-arrow-right-c"></i></a>
-        </span>
-      </div>
-    </div> <!-- row -->
-    <div class="row justify-content-center mt-5">
-      <div id="brand5" class="col-md-4 text-center text-md-left">
-        <figure class="figure">
-          <img src="<?php echo $polodivani_thumbnail_url; ?>" class="figure-img img-fluid" alt="A generic square">
-          <figcaption class="figure-caption text-secondary font-italic text-center">click</figcaption>
-        </figure>
-      <!-- <img src="http://via.placeholder.com/350x150"  class="tooltip-img img-fluid" alt=""> -->
-      </div>
-      <div class="col-10 col-md-8 mt-2 mt-md-0 text-left">
-        <span id="tooltiptext5" class="invisible"><?php echo substr(strip_tags($polodivani->post_content), 0, 250); ?><a href="<?php echo get_permalink($polodivani_id); ?>" class="badge badge-light">View More <i class="ion-arrow-right-c"></i></a>
-        </span>
       </div>
     </div> <!-- row -->
 
