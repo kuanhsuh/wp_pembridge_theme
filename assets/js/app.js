@@ -2,54 +2,6 @@ $(document).ready(function() {
 
   $('#loadingScreen').removeClass('d-flex').addClass('d-none');
   $('#content').removeClass('d-none').addClass('d-block');
-
-  //Brands Page
-  $("#brand1").click(function(){
-    var tooltiptext = $("#tooltiptext1")
-    tooltiptext.hasClass("invisible") ? tooltiptext.removeClass( "invisible" ) : tooltiptext.addClass( "invisible" )
-    }
-  );
-  $("#brand2").click(function(){
-    var tooltiptext = $("#tooltiptext2")
-    tooltiptext.hasClass("invisible") ? tooltiptext.removeClass( "invisible" ) : tooltiptext.addClass( "invisible" )
-    }
-  );
-  $("#brand3").click(function(){
-    var tooltiptext = $("#tooltiptext3")
-    tooltiptext.hasClass("invisible") ? tooltiptext.removeClass( "invisible" ) : tooltiptext.addClass( "invisible" )
-    }
-  );
-  $("#brand4").click(function(){
-    var tooltiptext = $("#tooltiptext4")
-    tooltiptext.hasClass("invisible") ? tooltiptext.removeClass( "invisible" ) : tooltiptext.addClass( "invisible" )
-    }
-  );
-  $("#brand5").click(function(){
-    var tooltiptext = $("#tooltiptext5")
-    tooltiptext.hasClass("invisible") ? tooltiptext.removeClass( "invisible" ) : tooltiptext.addClass( "invisible" )
-    }
-  );
-  $("#brand6").click(function(){
-    var tooltiptext = $("#tooltiptext6")
-    tooltiptext.hasClass("invisible") ? tooltiptext.removeClass( "invisible" ) : tooltiptext.addClass( "invisible" )
-    }
-  );
-
-  if(window.innerWidth < 768) {
-    $("#brand1").off("click");
-    $("#brand2").off("click");
-    $("#brand3").off("click");
-    $("#brand4").off("click");
-    $("#brand5").off("click");
-    $("#brand6").off("click");
-    $("#tooltiptext1").removeClass( "invisible" )
-    $("#tooltiptext2").removeClass( "invisible" )
-    $("#tooltiptext3").removeClass( "invisible" )
-    $("#tooltiptext4").removeClass( "invisible" )
-    $("#tooltiptext5").removeClass( "invisible" )
-    $("#tooltiptext6").removeClass( "invisible" )
-  }
-
   //Products - Main Menu
   $("#hover-products").click(function(){
     $("#products-brands").addClass("invisible")
