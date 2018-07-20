@@ -43,42 +43,42 @@ get_header();?>
   <div class="container">
 
     <div class="row justify-content-center mt-5">
-      <div class="col-md-4">
+      <div class="col-md-4 col-6">
         <figure class="figure">
           <a href="<?php echo get_permalink($camus_id); ?>">
           <img src="<?php echo $camus_thumbnail_url; ?>" class="img-responsive" alt="<?php echo $camus_thumbnail_url; ?>">
           </a>
         </figure>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 col-6">
         <figure class="figure">
           <a href="<?php echo get_permalink($gubi_id); ?>">
           <img src="<?php echo $gubi_thumbnail_url; ?>" class="img-responsive" alt="<?php echo $gubi_thumbnail_url; ?>">
           </a>
         </figure>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 col-6">
         <figure class="figure">
           <a href="<?php echo get_permalink($classicon_id); ?>">
           <img src="<?php echo $classicon_thumbnail_url; ?>" class="img-responsive" alt="<?php echo $classicon_thumbnail_url; ?>">
           </a>
         </figure>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 col-6">
         <figure class="figure">
           <a href="<?php echo get_permalink($leolux_id); ?>">
           <img src="<?php echo $leolux_thumbnail_url; ?>" class="img-responsive" alt="<?php echo $leolux_thumbnail_url; ?>">
           </a>
         </figure>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 col-6">
         <figure class="figure">
           <a href="<?php echo get_permalink($polodivani_id); ?>">
           <img src="<?php echo $polodivani_thumbnail_url; ?>" class="img-responsive" alt="<?php echo $polodivani_thumbnail_url; ?>">
           </a>
         </figure>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 col-6">
 
       </div>
     </div> <!-- row -->
