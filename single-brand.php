@@ -29,30 +29,30 @@ get_header();?>
     <?php
 while (have_posts()): the_post();?>
 
-	<!-- BRAND DESCRIPTION
-	==================================================== -->
-	<section class="designer-description mb-5">
-	  <div class="container">
-	    <div class="row mb-5 pb-5 border-bottom">
-	      <div class="col text-center">
-	        <img src='<?php echo $hero_img['url']; ?>' class="img-fluid" alt="<?php echo $hero_img['alt']; ?>">
-	      </div>
-	    </div> <!-- row -->
-	    <div class="row border-bottom">
-	      <div class="col-sm-4 text-center mb-3 mb-sm-0">
-	      <?php
+			<!-- BRAND DESCRIPTION
+			==================================================== -->
+			<section class="designer-description mb-5">
+			  <div class="container">
+			    <div class="row mb-5 pb-5 border-bottom">
+			      <div class="col text-center">
+			        <img src='<?php echo $hero_img['url']; ?>' class="img-fluid" alt="<?php echo $hero_img['alt']; ?>">
+			      </div>
+			    </div> <!-- row -->
+			    <div class="row border-bottom">
+			      <div class="col-sm-4 text-center mb-3 mb-sm-0">
+			      <?php
     if (has_post_thumbnail()) { // check if the post has a Post Thumbnail assigned to it.
         the_post_thumbnail('full', array('class' => 'img-fluid brand-thumbnail')); // show featured image
     }
     ?>
-	      </div>
-	      <div class="col-sm-8">
-	        <?php the_content();?>
-	      </div>
-	    </div> <!-- row -->
-	  </div>
-	</section>
-	<?php endwhile; // End of the loop.
+			      </div>
+			      <div class="col-sm-8">
+			        <?php echo the_content(); ?>
+			      </div>
+			    </div> <!-- row -->
+			  </div>
+			</section>
+			<?php endwhile; // End of the loop.
 ?>
 
 <!-- BRAND COLLECTION
