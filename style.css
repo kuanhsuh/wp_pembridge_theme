@@ -344,28 +344,15 @@ p {
   padding: 0.5rem 1rem;
 }
 
-nav {
-  border-top: 1px solid #46494C;
-}
-
 @media screen and (max-width: 768px) {
   nav {
     border-top: none;
   }
 }
 
-nav .sm-navbar-brand {
-  visibility: hidden;
-}
-
-@media screen and (max-width: 768px) {
-  nav .sm-navbar-brand {
-    visibility: visible;
-  }
-}
 
 nav .nav-item {
-  width: 100px;
+  width: 90px;
   font-size: 0.8rem;
 }
 
@@ -450,7 +437,7 @@ nav .nav-item {
 }
 
 .hover-news {
-  width: 50px;
+  width: 80px;
 }
 
 @media screen and (max-width: 768px) {

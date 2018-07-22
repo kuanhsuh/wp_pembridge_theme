@@ -8,26 +8,24 @@
  *
  * @package pembridge
  */
-
+$uploads = wp_upload_dir();
 ?>
 <!doctype html>
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes();?>>
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
+	<meta charset="<?php bloginfo('charset');?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
-  <link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory'); ?>/assets/img/favicon.ico" />
+  <link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory');?>/assets/img/favicon.ico" />
 	<!-- Bootstrap core CSS -->
-	<link href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/bootstrap.min.css" rel="stylesheet">
-	<!-- Ionic core CSS -->
-	<link href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/ionicons.min.css" rel="stylesheet">
+	<link href="<?php bloginfo('stylesheet_directory');?>/assets/css/bootstrap.min.css" rel="stylesheet">
 
-	<?php wp_head(); ?>
+	<?php wp_head();?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class();?>>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'pembridge' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Skip to content', 'pembridge');?></a>
   <div id="loadingScreen" class="d-flex">
     <h2 class="loadingText">Pembridge</h2>
     <div id="loader"></div>
@@ -35,11 +33,8 @@
   <div id="content" style="display: none;">
 <!-- NAVBAR
   ==================================================== -->
-  <div class="container-fluid navtop-lg d-none d-md-block">
-      <a class="md-navbar-brand" href="http://www.pembridge.com.tw/"><img src="http://www.pembridge.com.tw/wp-content/uploads/2018/06/pembridge_logo-e1528033756647.jpg" class="img-fluid" style="height: 40px;" alt=""></a>
-  </div>
-  <nav class="container-fluid navbar navbar-expand-md navbar-light mb-3">
-    <a class="sm-navbar-brand" href="http://www.pembridge.com.tw/"><img src="<?php bloginfo('stylesheet_directory'); ?>http://www.pembridge.com.tw/wp-content/uploads/2018/06/pembridge_logo.jpg" class="img-fluid" alt=""></a>
+  <nav class="container navbar navbar-expand-md navbar-light mb-3">
+    <a class="sm-navbar-brand" href="<?php echo home_url(); ?>"><img src="<?php echo $uploads['baseurl'] . "/2018/06/pembridge_logo.jpg"; ?>" class="img-fluid" style="height: 40px;" alt="logo"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -66,3 +61,4 @@
       </ul>
     </div>
   </nav>
+
