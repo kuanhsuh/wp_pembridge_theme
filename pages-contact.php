@@ -14,18 +14,18 @@ get_header();?>
 <section class="heading mb-4">
     <div class="container">
         <div class="row justify-content-center">
-          <div class="col-sm-12">
-              <h1 class="text-center pb-4 text-uppercase"><?php the_title();?></h1>
-          </div>
+            <div class="col-sm-12">
+                <h1 class="text-center pb-4 text-uppercase"><?php the_title();?></h1>
+            </div>
         </div>
     </div>
-  </section>
+</section>
 
 <!-- Contact Info ct-info
 ==================================================== -->
     <section class="ct-info">
-      <div class="container">
-          <div class="row justify-content-center">
+        <div class="container">
+            <div class="row justify-content-center">
             <div class="col-sm-12">
             <?php
 if (has_post_thumbnail()) { // check if the post has a Post Thumbnail assigned to it.
@@ -53,7 +53,7 @@ if (has_post_thumbnail()) { // check if the post has a Post Thumbnail assigned t
     </div> <!-- container -->
 </section>
 
-  <script>
+<script>
 function initMap(){
     var map;
     var coords = {lat: 22.623182, lng: 120.280852};
