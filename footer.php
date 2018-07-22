@@ -23,7 +23,7 @@
       </div>
     </div>
 </footer> -->
-<footer class="p-5">
+<footer class="p-5 mt-4">
   <div class="container">
     <div class="row">
       <div class="col-6">
@@ -36,7 +36,7 @@
           <li>F 07 777-333-8888</li>
           <li class="mb-3">E info@pembridge.com</li>
           <li>
-            <a href="#">
+            <a href="<?php echo get_page_link(7); ?>">
             MAP
             </a>
           </li>
