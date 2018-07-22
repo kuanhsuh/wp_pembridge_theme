@@ -810,4 +810,38 @@ p.description_content a {
 #map {
   width: 100%;
   height: 350px;
- }
+}
+
+
+footer {
+  background: #636e72;
+  color: white;
+}
+footer h3 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+footer h3:after {
+  content: " ";
+  display: block;
+  margin-top: 20px;
+  width: 100%;
+  height: 2px;
+  background: #535c60;
+}
+footer ul {
+  padding: 0;
+  list-style: none;
+}
+footer .icon {
+  width: 30px;
+  height: 30px;
+}
+footer a {
+  text-decoration: none;
+  color: currentcolor;
+}
+footer a:hover {
+  text-decoration: none;
+  color: currentcolor;
+}
