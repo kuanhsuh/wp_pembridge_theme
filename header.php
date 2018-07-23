@@ -26,11 +26,7 @@ $uploads = wp_upload_dir();
 <body <?php body_class();?>>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Skip to content', 'pembridge');?></a>
-  <div id="loadingScreen" class="d-flex">
-    <h2 class="loadingText">Pembridge</h2>
-    <div id="loader"></div>
-  </div>
-  <div id="content" style="display: none;">
+  <div id="content">
 <!-- NAVBAR
   ==================================================== -->
   <nav class="container navbar navbar-expand-md navbar-light mb-3">

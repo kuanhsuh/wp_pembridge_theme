@@ -335,6 +335,15 @@ object {
 
 body {
 	font-size: 14px;
+     -webkit-animation: fadein 2.2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2.2s; /* Firefox < 16 */
+        -ms-animation: fadein 2.2s; /* Internet Explorer */
+         -o-animation: fadein 2.2s; /* Opera < 12.1 */
+            animation: fadein 2.2s;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 p {
 	margin-bottom: 0.75rem;
@@ -562,20 +571,6 @@ body {
 
 a {
   color: #46494C;
-}
-
-#loadingScreen {
-  height: 100vh;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-animation-name: fadeIn;
-          animation-name: fadeIn;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
 }
 
 .loadingText {

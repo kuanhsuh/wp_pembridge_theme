@@ -1,7 +1,4 @@
 $(document).ready(function() {
-
-  $('#loadingScreen').removeClass('d-flex').addClass('d-none');
-  $('#content').removeClass('d-none').addClass('d-block');
   //Products - Main Menu
   $("#hover-products").click(function(){
     $("#products-brands").addClass("invisible")
