@@ -45,10 +45,10 @@
       <div class="col-6">
         <h3 class="mb-4">Follow Us</h3>
         <p>
-          <a href="https://www.facebook.com/">
+          <a href="https://www.facebook.com/pembridgetw">
             <ion-icon name="logo-facebook" class="icon"></ion-icon>
           </a>
-          <a href="https://www.facebook.com/">
+          <a href="www.instagram.com/pembridgetw">
             <ion-icon name="logo-instagram" class="icon"></ion-icon>
           </a>
         </p>
