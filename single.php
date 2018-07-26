@@ -131,39 +131,27 @@
 </div>
 
 <section class="product-info mt-3 mt-sm-5">
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-sm-4 text-center text-sm-left">
-				<h2 class="sans-seif" style="font-size: 1.5rem;">
-					<?php the_title();?>
-				</h2>
-				<div>
-					<ul class="list-unstyled" style="color: #919ca7;">
-						<li>
-							<?php echo $specs_one; ?>
-						</li>
-						<li>
-							<?php echo $specs_two; ?>
-						</li>
-						<li>
-							<?php echo $specs_three; ?>
-						</li>
-						<li>
-							<?php echo $specs_four; ?>
-						</li>
-						<li>
-							<?php echo $specs_five; ?>
-						</li>
-					</ul>
-				</div>
-				<hr class="d-block d-sm-none">
-			</div>
-			<div class="col-sm-8 mt-3 mt-sm-0">
-				<?php the_content();?>
-				<button onclick="goBack()" class="px-5 btn btn-md btn-dark text-uppercase float-left">回上頁</button>
-			</div>
-		</div>
-	</div>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-sm-4 text-center text-sm-left">
+      <h2 class="sans-seif text-uppercase"><?php the_title(); ?></h2>
+      <div>
+        <ul class="list-unstyled">
+          <li><?php echo $specs_one; ?></li>
+          <li><?php echo $specs_two; ?></li>
+          <li><?php echo $specs_three; ?></li>
+          <li><?php echo $specs_four; ?></li>
+          <li><?php echo $specs_five; ?></li>
+        </ul>
+      </div>
+      <hr class="d-block d-sm-none">
+    </div>
+    <div class="col-sm-8 mt-3 mt-sm-0">
+      <?php the_content(); ?>
+      <button onclick="goBack()" class="px-5 btn btn-md btn-dark text-uppercase float-right">回上頁</button>
+    </div>
+  </div>
+</div>
 </section>
 
 <section class="mt-5">
@@ -218,7 +206,7 @@
 <script>
 	function goBack() {
 		if (document.referrer == "") {
-			window.location.href = "http://www.pembridge.com.tw/products/"
+			window.location.href = "<?php echo get_page_link(25); ?>"
 		} else {
 			window.history.back();
 		}

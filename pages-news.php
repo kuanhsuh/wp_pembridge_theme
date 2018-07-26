@@ -47,9 +47,9 @@ get_header();?>
 wp_reset_query();?>
       <div class="mt-4 text-center">
         <?php $count = $loop->post_count;
-if ($count > 3) {
-    wp_pagenavi(array('query' => $loop));
-}?>
+          if($count > 3){
+           wp_pagenavi( array( 'query' => $loop ) );
+          } ?>
       </div>
     </div>
     <!-- container -->
