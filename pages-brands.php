@@ -43,7 +43,6 @@ get_header();?>
     <?php $loop = new WP_Query(array('post_type' => 'brand', 'orderby' => 'post_id', 'order' => 'ASC'));?>
     <?php while ($loop->have_posts()): $loop->the_post();?>
 	      <div class="col-6 col-sm-4 mb-4">
-	        </div>imageholder -->
           <figure class="figure">
           <a href="<?php echo get_permalink(); ?>">
             <?php  the_post_thumbnail('full', array('class' => 'img-responsive image')); ?>

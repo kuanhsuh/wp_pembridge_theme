@@ -21,14 +21,14 @@ $cat_three_link = get_field('cat_three_link');
 $cat_four_title = get_field('cat_four_title');
 $cat_four_img = get_field('cat_four_img');
 $cat_four_link = get_field('cat_four_link');
-
+// $cat_id = get_post_meta( 5, 'box_one_heading', true );
 get_header();?>
 
   <div id="primary" class="content-area">
     <main id="main" class="site-main">
     <?php
 while (have_posts()): the_post();?>
-
+<?php $cat_id = get_post_meta(get_the_ID(), 'cat_id', true); ?>
 			<!-- BRAND DESCRIPTION
 			==================================================== -->
 			<section class="designer-description mb-5">
@@ -109,7 +109,7 @@ while (have_posts()): the_post();?>
 <!-- ion-ios-arrow-thin-right -->
 <script>
 function goRelated() {
-  window.location.href = "<?php echo get_permalink( get_page_by_path( $post_title ) ) ?>"
+  window.location.href = "<?php echo get_category_link($cat_id); ?>"
 }
 </script>
 <?php
