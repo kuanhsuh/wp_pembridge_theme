@@ -98,12 +98,19 @@ while (have_posts()): the_post();?>
           <?php }?>
         </div>
       </div> <!-- row -->
-      <a href="<?php echo get_page_link(14); ?>" class="btn btn-md btn-dark text-uppercase float-right">Back</a>
+      <!-- <a href="<?php echo get_page_link(14); ?>" class="btn btn-md btn-dark text-uppercase float-right">Back</a> -->
+      <button onclick="goRelated()" class="btn btn-md btn-dark text-uppercase float-right">相關產品</button>
+      <div class="clearfix"></div>
     </div> <!-- container -->
   </section>
 
     </main><!-- #main -->
   </div><!-- #primary -->
 <!-- ion-ios-arrow-thin-right -->
+<script>
+function goRelated() {
+  window.location.href = "<?php echo get_permalink( get_page_by_path( $post_title ) ) ?>"
+}
+</script>
 <?php
 get_footer();

@@ -64,22 +64,16 @@ get_header();?>
           </li>
         </ul> <!-- end product ul -->
         <ul id="brand" class="nav justify-content-center border-bottom d-none">
-          <li class="nav-item">
-            <a id="main-chair" class="nav-link text-uppercase" href="<?php echo get_category_link(3); ?>">Camus</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-uppercase" href="<?php echo get_category_link(5); ?>">Gubi</a>
-          </li>
-          <li class="nav-item">
-            <a id="main-table" class="nav-link text-uppercase" href="<?php echo get_category_link(4); ?>">Leolux</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-uppercase" href="<?php echo get_category_link(18); ?>">ClassiCon</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-uppercase" href="<?php echo get_category_link(17); ?>">Polodivani</a>
-          </li>
-        </ul> <!-- brand ul  -->
+        <?php
+          $args = array('child_of' => 29);
+          $categories = get_categories( $args );
+          foreach($categories as $category) {
+            echo '<li class="nav-item">
+            <a class="nav-link text-uppercase" href="' . get_category_link( $category->term_id ) . '">' . $category->name. '</a>
+          </li>';
+          }
+          ?>
+        </ul>
       </div> <!-- col -->
     </div> <!-- row -->
     <!-- Chair Submenu ROW -->
