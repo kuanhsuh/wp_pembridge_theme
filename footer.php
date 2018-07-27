@@ -14,15 +14,6 @@
 
 <!-- FOOTER
 ==================================================== -->
-<!-- <footer class="mt-5">
-    <div class="container">
-      <div class="row justify-content-center">
-        <p>
-				Copyright &copy; <?php //bloginfo('name'); ?> - <?php //echo date('Y')?>
-        </p>
-      </div>
-    </div>
-</footer> -->
 <footer class="p-5 mt-4">
   <div class="container">
     <div class="row">

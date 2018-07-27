@@ -64,42 +64,49 @@ while (have_posts()): the_post();?>
           <h3>品牌型錄下載</h3>
         </div>
         <div class="col-4">
-          <?php if ($cat_one_title) {?>
+          <?php if ($cat_one_title) {
+    ?>
           <a href="<?php echo $cat_one_link; ?>">
             <img src="<?php echo $cat_one_img['url']; ?>" class="mb-2 img-fluid">
             <p><?php echo $cat_one_title; ?> <i class="ion-ios-arrow-thin-right"></i></p>
           </a>
-          <?php }?>
+          <?php
+}?>
         </div>
         <div class="col-4">
-          <?php if ($cat_two_title) {?>
+          <?php if ($cat_two_title) {
+        ?>
           <a href="<?php echo $cat_two_link; ?>">
             <img src="<?php echo $cat_two_img['url']; ?>" class="mb-2 img-fluid">
             <p><?php echo $cat_two_title; ?> <i class="ion-ios-arrow-thin-right"></i></p>
           </a>
-          <?php }?>
+          <?php
+    }?>
         </div>
         <div class="col-4">
         </div>
         <div class="col-4">
-          <?php if ($cat_three_title) {?>
+          <?php if ($cat_three_title) {
+        ?>
           <a href="<?php echo $cat_three_link; ?>">
             <img src="<?php echo $cat_three_img['url']; ?>" class="mb-2 img-fluid">
             <p><?php echo $cat_three_title; ?> <i class="ion-ios-arrow-thin-right"></i></p>
           </a>
-          <?php }?>
+          <?php
+    }?>
         </div>
         <div class="col-4">
-          <?php if ($cat_four_title) {?>
+          <?php if ($cat_four_title) {
+        ?>
           <a href="<?php echo $cat_four_link; ?>">
             <img src="<?php echo $cat_four_img['url']; ?>" class="mb-2 img-fluid">
             <p><?php echo $cat_four_title; ?> <i class="ion-ios-arrow-thin-right"></i></p>
           </a>
-          <?php }?>
+          <?php
+    }?>
         </div>
       </div> <!-- row -->
-      <!-- <a href="<?php echo get_page_link(14); ?>" class="btn btn-md btn-dark text-uppercase float-right">Back</a> -->
-      <button onclick="goRelated()" class="btn btn-md btn-dark text-uppercase float-right">相關產品</button>
+      <button onclick="goRelated()" class="mt-5 btn btn-md btn-dark text-uppercase float-right">相關產品</button>
       <div class="clearfix"></div>
     </div> <!-- container -->
   </section>
