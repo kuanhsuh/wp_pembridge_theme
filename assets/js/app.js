@@ -8,6 +8,7 @@ $(document).ready(function() {
     $("#chair").addClass("d-none")
     $("#table").addClass("d-none")
     $("#storage").addClass("d-none")
+    $("#lighting").addClass("d-none")
     if ($("#products-products").hasClass("invisible")){
       $("#products-products").removeClass("invisible")
       $("#products-products").removeClass("d-none")
@@ -25,6 +26,7 @@ $(document).ready(function() {
     $("#chair").addClass("d-none")
     $("#table").addClass("d-none")
     $("#storage").addClass("d-none")
+    $("#lighting").addClass("d-none")
     if ($("#brand").hasClass("d-none")){
       $("#brand").removeClass("d-none")
     } else {
@@ -40,6 +42,7 @@ $(document).ready(function() {
     $("#submenu").addClass("invisible")
     $("#chair").addClass("d-none")
     $("#table").addClass("d-none")
+    $("#lighting").addClass("d-none")
     if ($("#product").hasClass("d-none")){
       $("#product").removeClass("d-none")
     } else {
@@ -55,6 +58,7 @@ $(document).ready(function() {
       $("#table").addClass("d-none")
       $("#chair").addClass("d-none")
       $("#storage").removeClass("d-none")
+      $("#lighting").addClass("d-none")
     } else {
       $("#submenu").addClass("invisible")
       $("#storage").addClass("d-none")
@@ -67,6 +71,7 @@ $(document).ready(function() {
       $("#table").addClass("d-none")
       $("#storage").addClass("d-none")
       $("#chair").removeClass("d-none")
+      $("#lighting").addClass("d-none")
     } else {
       $("#submenu").addClass("invisible")
       $("#chair").addClass("d-none")
@@ -80,6 +85,21 @@ $(document).ready(function() {
       $("#chair").addClass("d-none")
       $("#storage").addClass("d-none")
       $("#table").removeClass("d-none")
+      $("#lighting").addClass("d-none")
+    } else {
+      $("#submenu").addClass("invisible")
+      $("#table").addClass("d-none")
+    }
+  })
+
+  // Lighting Submenu
+  $("#main-lighting").click(function(){
+    if ($("#lighting").hasClass("d-none")){
+      $("#submenu").removeClass("invisible")
+      $("#chair").addClass("d-none")
+      $("#storage").addClass("d-none")
+      $("#table").addClass("d-none")
+      $("#lighting").removeClass("d-none")
     } else {
       $("#submenu").addClass("invisible")
       $("#table").addClass("d-none")
