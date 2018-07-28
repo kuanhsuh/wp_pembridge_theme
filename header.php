@@ -19,6 +19,7 @@ $uploads = wp_upload_dir();
   <link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory');?>/assets/img/favicon.ico" />
 	<!-- Bootstrap core CSS -->
 	<link href="<?php bloginfo('stylesheet_directory');?>/assets/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/ionicons@4.2.4/dist/ionicons.js"></script>
 
 	<?php wp_head();?>
 </head>

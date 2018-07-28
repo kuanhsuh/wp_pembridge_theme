@@ -58,7 +58,6 @@
 
 <?php wp_footer();?>
 <script src="<?php bloginfo('template_directory');?>/assets/js/bootstrap.min.js"></script>
-<script src="https://unpkg.com/ionicons@4.2.4/dist/ionicons.js"></script>
 <script src="<?php bloginfo('template_directory');?>/assets/js/app.js"></script>
 </body>
 </html>
