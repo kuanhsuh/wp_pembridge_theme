@@ -39,7 +39,7 @@
           <a href="https://www.facebook.com/pembridgetw">
             <ion-icon name="logo-facebook" class="icon"></ion-icon>
           </a>
-          <a href="www.instagram.com/pembridgetw">
+          <a href="https://www.instagram.com/pembridgetw/">
             <ion-icon name="logo-instagram" class="icon"></ion-icon>
           </a>
         </p>

@@ -2,7 +2,7 @@
 /* Template Name: Products Page */
 
 get_header();
-get_template_part('products', 'menu');
+require(locate_template('products-menu.php'));
 ?>
 
 

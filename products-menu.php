@@ -17,7 +17,15 @@
 <div class="container">
     <div class="row justify-content-center">
       <div class="col-sm-12">
-          <h1 class="text-center pb-4 text-uppercase"><?php the_title();?></h1>
+          <h1 class="text-center pb-4 text-uppercase">
+          <?php
+            if (is_page()) { // PAGE
+                echo get_the_title();
+            } elseif (is_category()) {
+                echo single_cat_title();
+            }
+          ?>
+          </h1>
       </div>
     </div> <!-- row -->
     <div class="row justify-content-center">
@@ -88,45 +96,48 @@
     <div id="submenu" class="row justify-content-center invisible">
       <div class="col-sm-12">
         <ul id="chair" class="d-none nav justify-content-center border-bottom">
-            <li class="nav-item">
-              <a class="nav-link text-uppercase" href="<?php echo get_category_link(16); ?>">餐椅</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-uppercase" href="<?php echo get_category_link(19); ?>">扶手椅</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-uppercase" href="<?php echo get_category_link(20); ?>">休閒椅</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-uppercase" href="<?php echo get_category_link(21); ?>">吧台椅</a>
-            </li>
-          </ul> <!-- end chair -->
-          <ul id="storage" class="d-none nav justify-content-center border-bottom">
-            <li class="nav-item">
-              <a class="nav-link text-uppercase" href="<?php echo get_category_link(25); ?>">書櫃</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-uppercase" href="<?php echo get_category_link(26); ?>">玄關桌</a>
-            </li>
-          </ul> <!-- end storages -->
-          <ul id="table" class="d-none nav justify-content-center border-bottom">
-            <li class="nav-item">
-              <a class="nav-link text-uppercase" href="<?php echo get_category_link(22); ?>">茶几/邊几</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-uppercase" href="<?php echo get_category_link(23); ?>">餐桌</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-uppercase" href="<?php echo get_category_link(24); ?>">書桌</a>
-            </li>
-          </ul>
+          <li class="nav-item">
+            <a class="nav-link text-uppercase" href="<?php echo get_category_link(16); ?>">餐椅</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-uppercase" href="<?php echo get_category_link(19); ?>">扶手椅</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-uppercase" href="<?php echo get_category_link(20); ?>">休閒椅</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-uppercase" href="<?php echo get_category_link(21); ?>">吧台椅</a>
+          </li>
+        </ul> <!-- end chair -->
+        <ul id="storage" class="d-none nav justify-content-center border-bottom">
+          <li class="nav-item">
+            <a class="nav-link text-uppercase" href="<?php echo get_category_link(25); ?>">書櫃</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-uppercase" href="<?php echo get_category_link(26); ?>">玄關桌</a>
+          </li>
+        </ul> <!-- end storages -->
+        <ul id="table" class="d-none nav justify-content-center border-bottom">
+          <li class="nav-item">
+            <a class="nav-link text-uppercase" href="<?php echo get_category_link(22); ?>">茶几/邊几</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-uppercase" href="<?php echo get_category_link(23); ?>">餐桌</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-uppercase" href="<?php echo get_category_link(24); ?>">書桌</a>
+          </li>
+        </ul>
           <ul id="lighting" class="d-none nav justify-content-center border-bottom">
-            <li class="nav-item">
-              <a class="nav-link text-uppercase" href="<?php echo get_category_link(31); ?>">吊燈</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-uppercase" href="<?php echo get_category_link(32); ?>">壁燈</a>
-            </li>
+          <?php
+            $args = array('child_of' => 11);
+            $categories = get_categories($args);
+            foreach ($categories as $category) {
+                echo '<li class="nav-item">
+              <a class="nav-link text-uppercase" href="' . get_category_link($category->term_id) . '">' . $category->name. '</a>
+            </li>';
+            }
+            ?>
           </ul>
       </div>
     </div>

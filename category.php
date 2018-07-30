@@ -2,7 +2,7 @@
 /* Template Name: Products Page */
 // $slugs = explode('/', get_query_var('category_name'));
 get_header();
-get_template_part('products', 'menu');
+require(locate_template('products-menu.php'));
 ?>
 
 <!-- Products
@@ -39,12 +39,6 @@ while (have_posts()): the_post();
 
 			      <?php
 endwhile;
-//       wp_pagenavi();
-//             the_posts_navigation();
-
-//         else :
-
-//             get_template_part( 'template-parts/content', 'none' );
 
 endif;?>
 
