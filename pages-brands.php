@@ -1,37 +1,14 @@
 <?php
 /* Template Name: Brand Page */
-$camus_id = 13;
-$gubi_id = 81;
-$classicon_id = 80;
-$leolux_id = 16;
-$polodivani_id = 123;
-
-$camus = get_post($camus_id);
-$gubi = get_post($gubi_id);
-$classicon = get_post($classicon_id);
-$leolux = get_post($leolux_id);
-$polodivani = get_post($polodivani_id);
-
-$camus_thumbnail_id = get_post_thumbnail_id($camus_id);
-$gubi_thumbnail_id = get_post_thumbnail_id($gubi_id);
-$classicon_thumbnail_id = get_post_thumbnail_id($classicon_id);
-$leolux_thumbnail_id = get_post_thumbnail_id($leolux_id);
-$polodivani_thumbnail_id = get_post_thumbnail_id($polodivani_id);
-
-$gubi_thumbnail_url = wp_get_attachment_url($gubi_thumbnail_id);
-$camus_thumbnail_url = wp_get_attachment_url($camus_thumbnail_id);
-$classicon_thumbnail_url = wp_get_attachment_url($classicon_thumbnail_id);
-$leolux_thumbnail_url = wp_get_attachment_url($leolux_thumbnail_id);
-$polodivani_thumbnail_url = wp_get_attachment_url($polodivani_thumbnail_id);
-
-get_header();?>
+get_header();
+?>
 <!-- Contact Heading ct-heading
 ==================================================== -->
 <section class="heading mb-5">
   <div class="container">
       <div class="row justify-content-center">
         <div class="col-sm-12">
-            <h1 class="text-left pb-4 text-uppercase"><?php the_title();?></h1>
+            <h1 class="text-center pb-4 text-uppercase"><?php the_title();?></h1>
         </div>
       </div>
   </div>
