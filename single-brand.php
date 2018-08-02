@@ -21,7 +21,6 @@ $cat_three_link = get_field('cat_three_link');
 $cat_four_title = get_field('cat_four_title');
 $cat_four_img = get_field('cat_four_img');
 $cat_four_link = get_field('cat_four_link');
-// $cat_id = get_post_meta( 5, 'box_one_heading', true );
 get_header();?>
 
   <div id="primary" class="content-area">

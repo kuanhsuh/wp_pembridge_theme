@@ -24,101 +24,140 @@
    $specs_four = get_field('specs_four');
    $specs_five = get_field('specs_five');
    
-   $dl_link = get_field('dl_link');
    get_header();?>
 <?php
    while (have_posts()): the_post();?>
 <div class="mb-2 breadcrumbs font-italic container" typeof="BreadcrumbList" vocab="https://schema.org/">
 	<?php if (function_exists('bcn_display')) {
-      bcn_display();
-      }?>
+       bcn_display();
+   }?>
 </div>
 <!-- CAROUSEL
    ==================================================== -->
 <div id="carouselExampleIndicators" class="carousel container slide" data-ride="carousel" data-interval="false" data-ride="false">
 	<ol class="carousel-indicators">
 		<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-		<?php if ($carousel_two) {?>
+		<?php if ($carousel_two) {
+       ?>
 		<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-		<?php }?>
-		<?php if ($carousel_three) {?>
+		<?php
+   }?>
+		<?php if ($carousel_three) {
+       ?>
 		<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-		<?php }?>
-		<?php if ($carousel_four) {?>
+		<?php
+   }?>
+		<?php if ($carousel_four) {
+       ?>
 		<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-		<?php }?>
-		<?php if ($carousel_five) {?>
+		<?php
+   }?>
+		<?php if ($carousel_five) {
+       ?>
 		<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-		<?php }?>
-		<?php if ($carousel_six) {?>
+		<?php
+   }?>
+		<?php if ($carousel_six) {
+       ?>
 		<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-		<?php }?>
-		<?php if ($carousel_seven) {?>
+		<?php
+   }?>
+		<?php if ($carousel_seven) {
+       ?>
 		<li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
-		<?php }?>
-		<?php if ($carousel_eight) {?>
+		<?php
+   }?>
+		<?php if ($carousel_eight) {
+       ?>
 		<li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
-		<?php }?>
-		<?php if ($carousel_nine) {?>
+		<?php
+   }?>
+		<?php if ($carousel_nine) {
+       ?>
 		<li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
-		<?php }?>
-		<?php if ($carousel_ten) {?>
+		<?php
+   }?>
+		<?php if ($carousel_ten) {
+       ?>
 		<li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
-		<?php }?>
+		<?php
+   }?>
 	</ol>
 	<div class="carousel-inner">
 		<div class="carousel-item active">
-			<?php if ($carousel_one) {?>
+			<?php if ($carousel_one) {
+       ?>
 			<img class="d-block w-100" src="<?php echo $carousel_one['url']; ?>" alt="First slide">
-			<?php } else {?>
+			<?php
+   } else {
+       ?>
 			<img class="d-block w-100" src="http://via.placeholder.com/960x450" alt="First slide">
-			<?php }?>
+			<?php
+   }?>
 		</div>
-		<?php if ($carousel_two) {?>
+		<?php if ($carousel_two) {
+       ?>
 		<div class="carousel-item">
 			<img class="d-block w-100" src="<?php echo $carousel_two['url']; ?>" alt="Second Product">
 		</div>
-		<?php }?>
-		<?php if ($carousel_three) {?>
+		<?php
+   }?>
+		<?php if ($carousel_three) {
+       ?>
 		<div class="carousel-item">
 			<img class="d-block w-100" src="<?php echo $carousel_three['url']; ?>" alt="Third Product">
 		</div>
-		<?php }?>
-		<?php if ($carousel_four) {?>
+		<?php
+   }?>
+		<?php if ($carousel_four) {
+       ?>
 		<div class="carousel-item">
 			<img class="d-block w-100" src="<?php echo $carousel_four['url']; ?>" alt="Fourth Product">
 		</div>
-		<?php }?>
-		<?php if ($carousel_five) {?>
+		<?php
+   }?>
+		<?php if ($carousel_five) {
+       ?>
 		<div class="carousel-item">
 			<img class="d-block w-100" src="<?php echo $carousel_five['url']; ?>" alt="Fifth Product">
 		</div>
-		<?php }?>
-		<?php if ($carousel_six) {?>
+		<?php
+   }?>
+		<?php if ($carousel_six) {
+       ?>
 		<div class="carousel-item">
 			<img class="d-block w-100" src="<?php echo $carousel_six['url']; ?>" alt="Sixth Product">
 		</div>
-		<?php }?>
-		<?php if ($carousel_seven) {?>
+		<?php
+   }?>
+		<?php if ($carousel_seven) {
+       ?>
 		<div class="carousel-item">
 			<img class="d-block w-100" src="<?php echo $carousel_seven['url']; ?>" alt="Seventh Product">
 		</div>
-		<?php }?>
-		<?php if ($carousel_eight) {?>
+		<?php
+   }?>
+		<?php if ($carousel_eight) {
+       ?>
 		<div class="carousel-item">
 			<img class="d-block w-100" src="<?php echo $carousel_eight['url']; ?>" alt="Eighth Product">
 		</div>
-		<?php }?>
-		<?php if ($carousel_nine) {?>
+		<?php
+   }?>
+		<?php if ($carousel_nine) {
+       ?>
 		<div class="carousel-item">
 			<img class="d-block w-100" src="<?php echo $carousel_nine['url']; ?>" alt="Nineth Product">
 		</div>
-		<?php }?>
-		<?php if ($carousel_ten) {?>
+		<?php
+   }?>
+		<?php if ($carousel_ten) {
+       ?>
 		<div class="carousel-item">
 			<img class="d-block w-100" src="<?php echo $carousel_ten['url']; ?>" alt="Tenth Product">
 		</div>
-		<?php }?>
+		<?php
+   }?>
 	</div>
 	<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
 		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -176,19 +215,19 @@
        );
        $my_query = new WP_Query($args);
        if ($my_query->have_posts()) {
-           while ($my_query->have_posts()): $my_query->the_post();?>
+           while ($my_query->have_posts()): $my_query->the_post(); ?>
 			<div class="col-6 col-sm-4">
 				<a class="" href="<?php the_permalink()?>">
 					<div style="max-height:195px; overflow: hidden;" class="blockHover">
 						<?php
     if (has_post_thumbnail()) { // check if the post has a Post Thumbnail assigned to it.
         the_post_thumbnail('full', array('class' => 'img-fluid products-img')); // show featured image
-    }?>
+    } ?>
 					</div>
 				</a>
 				<a class="" href="<?php the_permalink()?>">
 					<h5 class="text-uppercase text-center mt-2 lead">
-						<?php the_title();?>
+						<?php the_title(); ?>
 					</h5>
 				</a>
 			</div>
