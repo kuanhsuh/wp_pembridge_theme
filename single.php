@@ -205,17 +205,17 @@
 		<div class="row">
 			<?php
    //for use in the loop, list 5 post titles related to first tag on current post
-   $categories = get_the_category();
-   $category_id = $categories[0]->cat_ID;
-   if ($category_id) {
-       $args = array(
-          'cat' => 2, -1,
+        $categories = get_the_category();
+        $category_id = $categories[0]->cat_ID;
+        if ($category_id) {
+            $args = array(
+          'cat' => $category_id , -1,
           'posts_per_page' => 6,
           'orderby' => 'rand',
        );
-       $my_query = new WP_Query($args);
-       if ($my_query->have_posts()) {
-           while ($my_query->have_posts()): $my_query->the_post(); ?>
+            $my_query = new WP_Query($args);
+            if ($my_query->have_posts()) {
+                while ($my_query->have_posts()): $my_query->the_post(); ?>
 			<div class="col-6 col-sm-4">
 				<a class="" href="<?php the_permalink()?>">
 					<div style="max-height:195px; overflow: hidden;" class="blockHover">
@@ -235,9 +235,9 @@
 			</a>
 			<?php
    endwhile;
-       }
-       wp_reset_query();
-   }
+            }
+            wp_reset_query();
+        }
    ?>
 		</div>
 	</div>
